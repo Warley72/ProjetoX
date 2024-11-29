@@ -20,8 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${({ theme }) => theme.fonts.body};
 
     display: flex;
-    justify-content: center;
-    gap: 5px;
+    justify-content: space-evenly;
   }
 
   h1, h2, h3 {
