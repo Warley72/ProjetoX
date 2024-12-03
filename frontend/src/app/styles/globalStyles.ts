@@ -35,9 +35,8 @@ export const GlobalStyles = createGlobalStyle`
     list-style-type: none;
   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+  a img {
+  border: none;
+ }
 `;
 export default GlobalStyles;

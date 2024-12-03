@@ -5,10 +5,10 @@ import {TwitchContainer, ViewersContainer} from "./style"
 export default function InforTwitch() {
     return(
         <TwitchContainer>
-            <div className="imageTwitch"></div>
-            <div className="InfoBarSmallElement ">99</div>
+                <div className="imageTwitch"></div>
             <ViewersContainer >
-                <div className="">3838</div>
+                <a className="InfoBarSmallElement ">99</a>
+                <a className="ViewersNumber">3838</a>
             </ViewersContainer>
         </TwitchContainer>
     )

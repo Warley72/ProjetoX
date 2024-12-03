@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TwitchContainer = styled.div`
     position: absolute;
+    cursor: pointer;
     top: 14px;
     left: 7px;
 
@@ -14,6 +15,7 @@ export const TwitchContainer = styled.div`
   width: 47px;
   height: 16px;
   background-image: url(/box/icon-twitch.png);
+  background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
@@ -21,8 +23,7 @@ export const TwitchContainer = styled.div`
 
 &::before {
   content: "";
-  position: absolute;
-  left: 55px;
+  position: relative;
   width: 11px;
   height: 7px;
   background-image: url(/box/icon-streamers.png);
@@ -30,7 +31,6 @@ export const TwitchContainer = styled.div`
 }
 .InfoBarSmallElement {
   position: absolute;
-  left: 72px;
   font-size: 9px;
   color: #ffffff;
 }
@@ -41,4 +41,9 @@ left: 93px;
 width: 11px;
 height: 7px;
 background-image: url(/box/icon-viewers.png);
+
+.ViewersNumber{
+  color:#ffffff;
+  font-size: 9px;
+}
 `
