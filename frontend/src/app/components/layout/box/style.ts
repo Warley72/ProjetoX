@@ -6,6 +6,8 @@ export const BoxContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  border-left: 2px solid #3a3738;
+  border-right: 2px solid #3a3738;
 
   &::before {
     content: "";
@@ -13,8 +15,6 @@ export const BoxContainer = styled.div`
     width: 100%;
     height: 28px;
     background-image: url(/box/cacheinfo_background.gif);
-    border-left: 2px solid #3a3738;
-    border-right: 2px solid #3a3738;
   }
   .navbar-top {
     position: absolute;
@@ -29,7 +29,7 @@ export const BoxContainer = styled.div`
       position: absolute;
       z-index: 3;
       top: -4px;
-      left: -3px;
+      left: -5px;
       width: 17px;
       height: 17px;
       background-image: url(/box/corner-tl.gif);
@@ -40,7 +40,7 @@ export const BoxContainer = styled.div`
       position: absolute;
       z-index: 3;
       top: -5px;
-      left: 1013px;
+      left: 1009px;
       width: 17px;
       height: 17px;
       background-image: url(/box/corner-tr.gif);
@@ -57,7 +57,7 @@ export const BoxContainer = styled.div`
       position: absolute;
       z-index: 1;
       top: 20px;
-      left: -3px;
+      left: -5px;
       width: 17px;
       height: 17px;
       background-image: url(/box/corner-bl.gif);
