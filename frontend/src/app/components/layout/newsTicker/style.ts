@@ -11,12 +11,12 @@ export const NewsTickerContainer = styled.div`
     position: relative;
     width: 100%;
     height: 25px;
-    overflow: hidden;
     background-image: url(/newsTicker/title-background-green.gif);
 
     &::before {
       content: "";
       position: absolute;
+      left: 6px;
       width: 250px;
       height: 25px;
       background-image: url(/newsTicker/headline-newsticker.gif);
@@ -25,7 +25,7 @@ export const NewsTickerContainer = styled.div`
 .scroll{
     content: "";
     position: relative;
-    width: 99.3%;
+    width: 99.1%;
     height: 100px;
     margin: 4px;
     overflow: hidden;
@@ -54,7 +54,7 @@ export const NewsTickerContainer = styled.div`
       position: absolute;
       z-index: 3;
       top: -5px;
-      left: 1009px;
+      left: 868px;
       width: 17px;
       height: 17px;
       background-image: url(/box/corner-tr.gif);
