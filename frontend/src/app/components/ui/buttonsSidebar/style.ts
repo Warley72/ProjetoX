@@ -5,12 +5,31 @@ export const ContainerSidebarButtons = styled.div`
   display: flex;
   flex-direction: column;
   top: 25px;
-`
+
+  .SmallBoxTop {
+    position: relative;
+    z-index: 3;
+    width: 180px;
+    height: 12px;
+    top: 86px;
+    left: 10px;
+    background-image: url(/buttons/buttonLogin/box-top.gif);
+  }
+  .SmallBoxBotton {
+    position: relative;
+    z-index: 1;
+    width: 180px;
+    height: 12px;
+    top: 86px;
+    left: 10px;
+    background-image: url(/buttons/buttonLogin/box-bottom.gif);
+  }
+`;
 export const ContainerButton = styled.div<{ $isOpen: boolean }>`
   position: relative;
   left: 20px;
   top: 86px;
-  height: ${props => (props.$isOpen ? '0' : '63px')};
+  height: ${(props) => (props.$isOpen ? "0" : "63px")};
   transition: height 0s;
   background-color: rgb(13, 46, 43);
   width: 161px;
@@ -24,12 +43,12 @@ const BoxSide = styled.div<{ $isOpen: boolean }>`
 `;
 export const BoxLeft = styled(BoxSide)`
   left: -5px;
-  opacity: ${props => (props.$isOpen ? '0' : '1')};
+  opacity: ${(props) => (props.$isOpen ? "0" : "1")};
   transition: opacity 0.1s ease, visibility 0.8s ease;
 `;
 export const BoxRight = styled(BoxSide)`
   left: 158px;
-  opacity: ${props => (props.$isOpen ? '0' : '1')};
+  opacity: ${(props) => (props.$isOpen ? "0" : "1")};
   transition: opacity 0s ease, visibility 0s ease;
 `;
 export const MenuExtend = styled.div`
@@ -43,7 +62,7 @@ export const MenuExtend = styled.div`
   pointer-events: none;
 `;
 export const MenuExtendeExit = styled.div<{ $isOpen: boolean }>`
- position: absolute;
+  position: absolute;
   z-index: 4;
   top: 20px;
   left: 160px;
@@ -51,11 +70,15 @@ export const MenuExtendeExit = styled.div<{ $isOpen: boolean }>`
   height: 12px;
   background-image: url(/buttons/buttonlogin/plus.gif);
   pointer-events: none;
-  opacity: ${props => (props.$isOpen ? '0' : '1')};
+  opacity: ${(props) => (props.$isOpen ? "0" : "1")};
   background-image: url(/buttons/buttonlogin/minus.gif);
   pointer-events: none;
 `;
-export const SidebarButton = styled.button<{ $top: string; $backgroundImage: string; $hoverImage: string }>`
+export const SidebarButton = styled.button<{
+  $top: string;
+  $backgroundImage: string;
+  $hoverImage: string;
+}>`
   position: relative;
   z-index: 1;
   top: ${({ $top }) => $top};

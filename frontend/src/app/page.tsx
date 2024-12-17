@@ -1,22 +1,22 @@
 "use client";
 
 import { MainContainer } from "../app/styles/layoutStyles/layoutContainerMain/index";
-import { MainContainerColumn } from "../app/styles/layoutStyles/layoutColumnMain/index"
+import { MainContainerColumn } from "../app/styles/layoutStyles/layoutColumnMain/index";
 
 import Box from "./components/layout/box";
-import MenuColumn from "./components/layout/menuColumn";
 import NewsTicker from "./components/layout/newsTicker";
 import StylePage from "./components/layout/stylePage";
+import MenuColumn from "./components/layout/menuColumn";
 import PremiumBox from "./components/layout/themBoxes";
 
 export default function Home() {
   return (
     <MainContainerColumn>
-      <MenuColumn/>
+      <MenuColumn />
       <MainContainer>
-          <Box />
-          <NewsTicker />
-          <StylePage />
+        <Box />
+        <NewsTicker />
+        <StylePage />
       </MainContainer>
       <PremiumBox />
     </MainContainerColumn>

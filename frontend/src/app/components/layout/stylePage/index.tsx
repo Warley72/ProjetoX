@@ -1,14 +1,13 @@
-"use client";
+"use client"
 
-import { ContainerStylePage } from "./style";
+import {NewsTickerContainer, NavbarTop, NavbarBottom, Title} from "./style"
 
-export default function StylePage() {
-  return (
-    <ContainerStylePage>
-      <div className="navbar-top"></div>
-            <div className="title"></div>
-                <div className="scroll"></div>
-      <div className="navbar-bottom"></div>
-    </ContainerStylePage>
-  );
+export default function NewsTicker() {
+    return(
+        <NewsTickerContainer>
+            <NavbarTop />
+                <Title />
+            <NavbarBottom />
+        </NewsTickerContainer>
+    )
 }

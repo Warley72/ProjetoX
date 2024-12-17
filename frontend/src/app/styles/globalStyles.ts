@@ -16,11 +16,9 @@ export const GlobalStyles = createGlobalStyle`
     background-image: url(/background/background-artwork.webp);
     background-repeat: no-repeat;
     background-position: top center;
-    border-image: none;
     font-family: ${({ theme }) => theme.fonts.body};
 
-    display: flex;
-    justify-content: space-evenly;
+
   }
 
   h1, h2, h3 {
@@ -35,7 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     list-style-type: none;
   }
 
-  a img {
+  img {
   border: none;
  }
 `;

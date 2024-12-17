@@ -9,6 +9,7 @@ export default function SidebarButtons() {
   };
     return(
         <ContainerSidebarButtons >
+            <div className='SmallBoxTop'></div>
             {/* Botão News */}
             <SidebarButton
                 onClick={toggleSidebar}
@@ -132,6 +133,7 @@ export default function SidebarButtons() {
                 $iconImage="/sidebar/sidebarbuttons/icon-support.gif"
                 />
             </SidebarButton>
+            <div className='SmallBoxBotton'></div>
         </ContainerSidebarButtons>
     )
 }

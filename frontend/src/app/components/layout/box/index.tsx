@@ -1,15 +1,23 @@
 "use client"
 
+import InforFanKit from './inforFanKit'
+import InforPlayers from './inforPlayers'
 import InforTwitch from './InforTwitch'
+import InforYoutube from './inforYoutube'
 
-import {BoxContainer} from './style'
+import {BoxContainer, NavbarTop, Title, NavbarBottom, InfoBarNumbers } from './style'
 
 export default function Box() {
     return(
         <BoxContainer>
-            <div className="navbar-top"></div>
-                <InforTwitch/> 
-            <div className="navbar-bottom"></div>
+            <NavbarTop />
+            <Title />
+            <InfoBarNumbers>
+                <InforTwitch />
+                <InforYoutube />
+                <InforFanKit />
+            </InfoBarNumbers>
+            <NavbarBottom />
         </BoxContainer>
     )
 }

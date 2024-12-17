@@ -1,14 +1,15 @@
 "use client"
+import BoxContentText from "./boxContent"
 
-import {NewsTickerContainer} from "./style"
+import {NewsTickerContainer, NavbarTop, NavbarBottom, Title} from "./style"
 
 export default function NewsTicker() {
     return(
         <NewsTickerContainer>
-            <div className="navbar-top"></div>
-                <div className="title"></div>
-                    <div className="scroll"></div>
-            <div className="navbar-bottom"></div>
+            <NavbarTop />
+                <Title />
+                    <BoxContentText />
+            <NavbarBottom />
         </NewsTickerContainer>
     )
 }

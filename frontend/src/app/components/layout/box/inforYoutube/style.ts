@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TwitchContainer = styled.a`
+export const YoutubeContainer = styled.a`
   position: relative;
   margin-top: -28px;
   left: 5px;
@@ -9,11 +9,11 @@ export const TwitchContainer = styled.a`
   justify-content: center;
   align-items: center;
 
-  .imageTwitch {
+  .imageYoutube {
     position: relative;
-    width: 47px;
+    width: 71px;
     height: 16px;
-    background-image: url(/box/icon-twitch.png);
+    background-image: url(/box/icon-youtube.png);
   }
 `;
 export const InfoBarNumbers = styled.div`
